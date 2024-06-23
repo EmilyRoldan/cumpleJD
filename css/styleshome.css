@@ -1,0 +1,103 @@
+body {
+    display: flex;
+    font-family: "Edu NSW ACT Foundation", cursive;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 6%;
+    margin-bottom: 4%;
+}
+
+/*Titulo ------------------*/
+header {
+    display: flex;
+}
+
+.Titlehome {
+    font-size: 3.5em;
+    font-weight: 200;
+    color: black;
+}
+
+/* Aqui esta el año y las flechas -----------------*/
+.container-years{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    align-items: center;
+    justify-content: center; 
+    margin-bottom: 4%;
+}
+
+.container-years i {
+    cursor: pointer;
+    font-size: 2em;
+    transition: transform 0.3s ease;
+}
+
+.Titleyears_ {
+    font-weight: 200;
+    color: black;
+}
+
+.container-years i:hover {
+    transform: scale(1.1); 
+}
+
+/* Contenedor calendarios-------------------------- */
+.container-calendar, .container-calendar2, .container-calendar3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4%;
+    padding: 0;
+    border: 0;
+}
+
+.btnc {
+    display: flex;
+    padding: 0;
+    border: 0;
+    background: none;
+    width: 200px;
+    height: 238px;
+    margin-right: 2%;
+    cursor: pointer; 
+    transition: transform 0.3s ease;
+}
+
+.btnc img {
+    width: 200px;
+    height: 238px;
+}
+
+.btnc:hover {
+    transform: scale(1.1); 
+}
+
+
+
+/*Boton para descargar carta ---------------*/
+.btn-container{
+    display: flex;
+    margin-top: 5%;
+    align-items: center;
+}
+.btn {
+    background-color: #15a498;
+    color: white;
+    text-align: center;
+    padding: 15px 32px;
+    font-size: 18px;
+    margin: 4px 2px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+
+.btn:hover {
+    background-color: #12766e;
+}

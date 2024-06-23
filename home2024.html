@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz cum juan futuro</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/styleshome.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400..700&display=swap"
+        rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <header>
+        <h1 class="Titlehome">Mis mejores momentos han sido a tu lado...</h1>
+    </header>
+
+    <div class="container-years">
+        <i class="fas fa-arrow-circle-left fa-3x" onclick="window.location.href='home.html'"></i>
+        <h1 class="Titleyears_">2024</h1>
+    </div>
+
+    <div class="container-calendar">
+        <button type="button" class="btnc" data-bs-toggle="modal" data-month="jan" onclick="loadModalContent(this)">
+            <img src="img/jan.png" alt="January">
+        </button>
+        <button type="button" class="btnc" data-bs-toggle="modal" data-month="feb" onclick="loadModalContent(this)">
+            <img src="img/feb2.png" alt="Feb">
+        </button>
+        <button type="button" class="btnc" data-bs-toggle="modal" data-month="mar" onclick="loadModalContent(this)">
+            <img src="img/march.png" alt="March">
+        </button>
+    </div>
+    <div class="container-calendar2">
+        <button type="button" class="btnc" data-bs-toggle="modal" data-month="apr" onclick="loadModalContent(this)">
+            <img src="img/april.png" alt="April">
+        </button>
+        <button type="button" class="btnc" data-bs-toggle="modal" data-month="may" onclick="loadModalContent(this)">
+            <img src="img/may2.png" alt="May">
+        </button>
+        <button type="button" class="btnc" data-bs-toggle="modal" data-month="jun" onclick="loadModalContent(this)">
+            <img src="img/june.png" alt="June">
+        </button>
+    </div>
+
+    <div class="btn-container">
+        <a class="btn" href="Felizcum.pdf" download="Te amo">Open me!</a>
+    </div>
+
+    <!-- Modal único -->
+    <div class="modal fade" id="monthModal" tabindex="-1" aria-labelledby="monthModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div id="monthCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="carousel-inner" id="carouselInner">
+                        <!-- El contenido del carrusel se actualizará dinámicamente -->
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#monthCarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#monthCarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+
+    <script>
+        const monthImages = {
+            jan: [
+                "img/janu1.jpeg", "img/janu2.jpeg", "img/janu3.jpeg", "img/janu4.jpeg", "img/janu5.jpeg", "img/janu6.jpeg", "img/janu7.jpeg", "img/janu8.jpeg", "img/janu9.jpeg", "img/janu10.jpeg",
+                "img/janu11.jpeg", "img/janu13.jpeg", "img/janu14.jpeg", "img/janu15.jpeg", "img/janu16.jpeg", "img/janu17.jpeg", "img/janu18.jpeg", "img/janu19.jpeg", "img/janu20.jpeg", "img/janu21.jpeg", "img/janu22.jpeg",
+                "img/janu23.jpeg", "img/janu24.jpeg", "img/janu25.jpeg", "img/janu26.jpeg", "img/janu27.jpeg", "img/janu28.jpeg", "img/janu29.jpeg", "img/janu30.jpeg", "img/janu31.jpeg", "img/janu32.jpeg",
+                "img/janu33.jpeg", "img/janu34.jpeg"
+            ],
+            feb: [
+                "img/febr1.jpeg", "img/febr2.jpeg", "img/febr3.jpeg", "img/febr4.jpeg", "img/febr5.jpeg", "img/febr6.jpeg", "img/febr7.jpeg", "img/febr8.jpeg", "img/febr9.jpeg",
+                "img/febr11.jpeg", "img/febr12.jpeg", "img/febr13.jpeg", "img/febr14.jpeg", "img/febr15.jpeg", "img/febr16.jpeg", "img/febr17.jpeg", "img/febr18.jpeg", "img/febr19.jpeg", "img/febr20.jpeg",
+                "img/febr21.jpeg", "img/febr22.jpeg", "img/febr23.jpeg", "img/febr24.jpeg", "img/febr25.jpeg", "img/febr26.jpeg", "img/febr27.jpeg", "img/febr28.jpeg", "img/febr29.jpeg", "img/febr30.jpeg",
+                "img/febr31.jpeg", "img/febr32.jpeg", "img/febr33.jpeg", "img/febr34.jpeg", "img/febr35.jpeg", "img/febr36.jpeg", "img/febr37.jpeg", "img/febr38.jpeg", "img/febr39.jpeg", "img/febr40.jpeg",
+                "img/febr41.jpeg", "img/febr42.jpeg", "img/febr43.jpeg", "img/febr44.jpeg", "img/febr45.jpeg", "img/febr46.jpeg", "img/febr47.jpeg", "img/febr48.jpeg", "img/febr49.jpeg", "img/febr50.jpeg",
+                "img/febr51.jpeg", "img/febr52.jpeg", "img/febr53.jpeg", "img/febr54.jpeg", "img/febr10.png"
+            ],
+            mar: [
+                "img/mar1.jpeg", "img/mar2.jpeg", "img/mar3.jpeg", "img/mar4.jpeg", "img/mar5.jpeg", "img/mar6.jpeg", "img/mar7.jpeg", "img/mar8.jpeg", "img/mar9.jpeg", "img/mar10.jpeg",
+                "img/mar11.jpeg", "img/mar12.jpeg", "img/mar13.jpeg", "img/mar14.jpeg", "img/mar15.jpeg", "img/mar16.jpeg", "img/mar17.jpeg", "img/mar18.jpeg", "img/mar19.jpeg", "img/mar20.jpeg",
+                "img/mar21.jpeg", "img/mar22.jpeg", "img/mar23.jpeg", "img/mar24.jpeg", "img/mar25.jpeg", "img/mar26.jpeg", "img/mar27.jpeg", "img/mar28.jpeg", "img/mar29.jpeg", "img/mar30.jpeg",
+                "img/mar31.jpeg", "img/mar32.jpeg", "img/mar33.jpeg", "img/mar34.jpeg", "img/mar35.jpeg", "img/mar36.jpeg", "img/mar37.jpeg", "img/mar38.jpeg", "img/mar39.jpeg", "img/mar40.jpeg",
+                "img/mar41.jpeg", "img/mar42.jpeg", "img/mar43.jpeg", "img/mar44.jpeg", "img/mar45.jpeg", "img/mar46.jpeg", "img/mar47.jpeg", "img/mar48.jpeg", "img/mar49.jpeg", "img/mar50.jpeg",
+                "img/mar51.jpeg", "img/mar52.jpeg"
+            ],
+            apr: [
+                "img/apr1.jpeg", "img/apr2.jpeg", "img/apr3.jpeg", "img/apr4.jpeg", "img/apr5.jpeg", "img/apr6.jpeg", "img/apr7.jpeg", "img/apr8.jpeg", "img/apr9.jpeg",
+                "videos/apr10.mp4", "videos/apr11.mp4", "videos/apr12.mp4", "videos/apr13.mp4",
+            ],
+            may: [
+                "img/mayo1.jpeg", "img/mayo2.jpeg", "img/mayo3.jpeg", "img/mayo4.jpeg", "img/mayo5.jpeg", "img/mayo6.jpeg", "img/mayo7.jpeg", "img/mayo8.jpeg",
+                "videos/mayo10.mp4"
+            ],
+            jun: ["img/june1.png","img/june2.jpeg","img/june2.png",],
+        };
+
+        function loadModalContent(button) {
+            const month = button.getAttribute("data-month");
+            const items = monthImages[month];
+
+            const carouselInner = document.getElementById("carouselInner");
+            carouselInner.innerHTML = "";
+
+            items.forEach((item, index) => {
+                const carouselItem = document.createElement("div");
+                carouselItem.className = "carousel-item" + (index === 0 ? " active" : "");
+                
+                let mediaElement;
+                if (item.endsWith('.jpeg') || item.endsWith('.jpg') || item.endsWith('.png') || item.endsWith('.gif')) {
+                    mediaElement = document.createElement('img');
+                    mediaElement.src = item;
+                    mediaElement.className = "d-block w-100";
+                } else if (item.endsWith('.mp4')) {
+                    mediaElement = document.createElement('video');
+                    mediaElement.src = item;
+                    mediaElement.className = "d-block w-100";
+                    mediaElement.controls = true;
+                }
+                
+                carouselItem.appendChild(mediaElement);
+                carouselInner.appendChild(carouselItem);
+            });
+
+            // Mostrar el modal
+            const modal = new bootstrap.Modal(document.getElementById('monthModal'));
+            modal.show();
+        }
+    </script>
+    <script>
+        var myCarousel = document.querySelector('#monthCarousel');
+        var carousel = new bootstrap.Carousel(myCarousel, {
+            interval: false,
+            ride: false
+        });
+
+        myCarousel.addEventListener('slide.bs.carousel', function (e) {
+            var activeItem = e.relatedTarget.querySelector('video');
+            if (activeItem) {
+                activeItem.muted = true;
+                activeItem.play();
+            }
+
+            var previousItem = e.target.querySelector('.carousel-item.active video');
+            if (previousItem) {
+                previousItem.pause();
+                previousItem.currentTime = 0;
+            }
+        });
+    </script>
+
+</body>
+
+</html>
