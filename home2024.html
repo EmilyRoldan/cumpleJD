@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Feliz cum juan futuro</title>
+    <!-- Favicon -->
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
@@ -123,7 +125,7 @@
                 "img/mayo1.jpeg", "img/mayo2.jpeg", "img/mayo3.jpeg", "img/mayo4.jpeg", "img/mayo5.jpeg", "img/mayo6.jpeg", "img/mayo7.jpeg", "img/mayo8.jpeg",
                 "videos/mayo10.mp4"
             ],
-            jun: ["img/june1.png","img/june2.jpeg","img/june2.png",],
+            jun: ["img/june1.png", "img/june2.jpeg", "img/june2.png",],
         };
 
         function loadModalContent(button) {
@@ -136,7 +138,7 @@
             items.forEach((item, index) => {
                 const carouselItem = document.createElement("div");
                 carouselItem.className = "carousel-item" + (index === 0 ? " active" : "");
-                
+
                 let mediaElement;
                 if (item.endsWith('.jpeg') || item.endsWith('.jpg') || item.endsWith('.png') || item.endsWith('.gif')) {
                     mediaElement = document.createElement('img');
@@ -148,7 +150,7 @@
                     mediaElement.className = "d-block w-100";
                     mediaElement.controls = true;
                 }
-                
+
                 carouselItem.appendChild(mediaElement);
                 carouselInner.appendChild(carouselItem);
             });
