@@ -23,6 +23,9 @@
 
 <body>
     <header>
+        <div class="container-home">
+            <i class="fas fa-home fa-2x" onclick="window.location.href='index.html'"></i>
+        </div>
         <h1 class="Titlehome">Mis mejores momentos han sido a tu lado...</h1>
     </header>
 
@@ -94,7 +97,7 @@
                 "img/janu1.jpeg", "img/janu2.jpeg", "img/janu3.jpeg", "img/janu4.jpeg", "img/janu5.jpeg", "img/janu6.jpeg", "img/janu7.jpeg", "img/janu8.jpeg", "img/janu9.jpeg", "img/janu10.jpeg",
                 "img/janu11.jpeg", "img/janu13.jpeg", "img/janu14.jpeg", "img/janu15.jpeg", "img/janu16.jpeg", "img/janu17.jpeg", "img/janu18.jpeg", "img/janu19.jpeg", "img/janu20.jpeg", "img/janu21.jpeg", "img/janu22.jpeg",
                 "img/janu23.jpeg", "img/janu24.jpeg", "img/janu25.jpeg", "img/janu26.jpeg", "img/janu27.jpeg", "img/janu28.jpeg", "img/janu29.jpeg", "img/janu30.jpeg", "img/janu31.jpeg", "img/janu32.jpeg",
-                "img/janu33.jpeg", "img/janu34.jpeg"
+                "img/janu33.jpeg", "img/janu34.jpeg", "videos/enero1,mp4"
             ],
             feb: [
                 "img/febr1.jpeg", "img/febr2.jpeg", "img/febr3.jpeg", "img/febr4.jpeg", "img/febr5.jpeg", "img/febr6.jpeg", "img/febr7.jpeg", "img/febr8.jpeg", "img/febr9.jpeg",
@@ -114,7 +117,7 @@
             ],
             apr: [
                 "img/apr1.jpeg", "img/apr2.jpeg", "img/apr3.jpeg", "img/apr4.jpeg", "img/apr5.jpeg", "img/apr6.jpeg", "img/apr7.jpeg", "img/apr8.jpeg", "img/apr9.jpeg",
-                "videos/apr10.mp4", "videos/apr11.mp4", "videos/apr12.mp4", "videos/apr13.mp4",
+                "videos/apr10.mp4", "videos/apr11.mp4", "videos/apr12.mp4", "videos/apr13.mp4", "videos/apr14.mp4"
             ],
             may: [
                 "img/mayo1.jpeg", "img/mayo2.jpeg", "img/mayo3.jpeg", "img/mayo4.jpeg", "img/mayo5.jpeg", "img/mayo6.jpeg", "img/mayo7.jpeg", "img/mayo8.jpeg",
@@ -165,7 +168,8 @@
         myCarousel.addEventListener('slide.bs.carousel', function (e) {
             var activeItem = e.relatedTarget.querySelector('video');
             if (activeItem) {
-                activeItem.muted = true;
+                activeItem.muted = false; // Desmutear el video
+                activeItem.controls = false; // Desactivar los controles
                 activeItem.play();
             }
 
@@ -176,7 +180,6 @@
             }
         });
     </script>
-
 </body>
 
 </html>

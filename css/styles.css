@@ -36,7 +36,7 @@ header {
 .yesBtn, .noBtn{
     display: flex;
     flex-direction:row;
-    font-size: 1em;
+    font-size: 1.7em;
     font-family: "Edu NSW ACT Foundation", cursive;
     font-weight: 200;
     color: black;
@@ -116,14 +116,12 @@ header {
     padding: 10px;
     border-radius: 50%;
     cursor: pointer;
-    transition: transform 0.3s, font-size 0.3s;
-    animation: pulse 2s infinite;
+    transition: transform 0.3s ease;
+    animation: pulse 1s infinite;
 }
 
 .nextbtn:hover {
     transform: scale(1.1);
-    font-size: 24px;
-    animation: none; 
 }
 
 @keyframes pulse {

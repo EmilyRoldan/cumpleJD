@@ -19,7 +19,21 @@ header {
     color: black;
 }
 
-/* Aqui esta el año y las flechas -----------------*/
+/*Icono casa ---------------*/
+.container-home i {
+    cursor: pointer;
+    position: absolute;
+    top:10px;
+    left:10px;
+    transition: transform 0.3s ease;
+}
+
+.container-home i:hover {
+    transform: scale(1.1); 
+}
+
+
+/* Aqui esta el año y la flecha -----------------*/
 .container-years{
     display: flex;
     flex-direction: row;

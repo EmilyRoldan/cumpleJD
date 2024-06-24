@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
         gifContainer.style.display = 'flex';  // Mostrar el GIF
         nextContainer.style.display = 'flex'; // Mostrar el boton de next
 
+
         // Iniciar el texto animado
         new Typed('.card__parrafo', {
             strings: ['Es broma jiji pero yo se que quieres muajajjaja...Hunde la flecha!!'],

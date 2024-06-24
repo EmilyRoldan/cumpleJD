@@ -23,6 +23,9 @@
 
 <body>
     <header>
+        <div class="container-home">
+            <i class="fas fa-home fa-2x" onclick="window.location.href='index.html'"></i>
+        </div>
         <h1 class="Titlehome">Mis mejores momentos han sido a tu lado...</h1>
     </header>
 
@@ -107,33 +110,43 @@
 
     <script>
         const monthImages = {
-            feb: ["img/feb1.jpeg", "img/feb2.jpeg", "img/feb3.jpeg", "img/feb4.jpeg", "img/feb5.jpeg", "img/feb6.jpeg", "img/feb7.jpeg"],
-            mar: ["img/March1.jpeg", "img/March2.jpeg", "img/March3.jpeg", "img/March4.jpeg", "img/March5.jpeg", "img/March6.jpeg", "img/March7.jpeg", "img/March8.jpeg", "img/March9.jpeg"],
+            feb: ["img/feb1.jpeg", "img/feb2.jpeg", "img/feb3.jpeg", "img/feb4.jpeg", "img/feb5.jpeg", "img/feb6.jpeg", "img/feb7.jpeg","videos/febrero1.mp4"],
+            mar: ["img/March1.jpeg", "img/March2.jpeg", "img/March3.jpeg", "img/March4.jpeg", "img/March5.jpeg", "img/March6.jpeg", "img/March7.jpeg", "img/March8.jpeg", "img/March9.jpeg","videos/marzo1.mp4"],
             apr: ["img/april1.jpeg", "img/april2.jpeg", "img/april3.jpeg", "img/april4.jpeg", "img/april5.jpeg"],
-            may: ["img/may1.jpeg", "img/may2.jpeg", "img/may3.jpeg", "img/may4.jpeg", "img/may5.jpeg", "img/may6.jpeg", "img/may7.jpeg"],
+            may: ["img/may1.jpeg", "img/may2.jpeg", "img/may3.jpeg", "img/may4.jpeg", "img/may5.jpeg", "img/may6.jpeg", "img/may7.jpeg", "videos/mayo1.mp4"],
             jun: ["img/jun1.jpeg", "img/jun2.jpeg", "img/jun3.jpeg", "img/jun4.jpeg", "img/jun5.jpeg", "img/jun6.jpeg", "img/jun7.jpeg", "img/jun8.jpeg", "img/jun9.jpeg"],
-            jul: ["img/jul1.jpeg", "img/jul2.jpeg", "img/jul3.jpeg", "img/jul4.jpeg", "img/jul5.jpeg", "img/jul6.jpeg", "img/jul7.jpeg", "img/jul8.jpeg", "img/jul9.jpeg", "img/jul10.jpeg", "img/jul11.jpeg", "img/jul12.jpeg", "img/jul13.jpeg", "img/jul14.jpeg", "img/jul15.jpeg", "img/jul16.jpeg", "img/jul17.jpeg", "img/jul19.jpeg", "img/jul20.jpeg", "img/jul21.jpeg", "img/jul22.jpeg", "img/jul23.jpeg", "img/jul24.jpeg"],
+            jul: ["img/jul1.jpeg", "img/jul2.jpeg", "img/jul3.jpeg", "img/jul4.jpeg", "img/jul5.jpeg", "img/jul6.jpeg", "img/jul7.jpeg", "img/jul8.jpeg", "img/jul9.jpeg", "img/jul10.jpeg", "img/jul11.jpeg", "videos/julio1.mp4", "img/jul12.jpeg", "img/jul13.jpeg", "img/jul14.jpeg", "img/jul15.jpeg", "img/jul16.jpeg", "img/jul17.jpeg", "img/jul19.jpeg", "img/jul20.jpeg", "img/jul21.jpeg", "img/jul22.jpeg", "img/jul23.jpeg", "img/jul24.jpeg"],
             aug: ["img/aug1.jpeg", "img/aug2.jpeg", "img/aug3.jpeg", "img/aug4.jpeg", "img/aug5.jpeg", "img/aug6.jpeg", "img/aug7.jpeg", "img/aug8.jpeg", "img/aug9.jpeg", "img/aug10.jpeg"],
-            sep: ["img/sep1.jpeg", "img/sep2.jpeg", "img/sep3.jpeg", "img/sep4.jpeg", "img/sep5.jpeg", "img/sep6.jpeg", "img/sep7.jpeg", "img/sep8.jpeg", "img/sep9.jpeg", "img/sep10.jpeg", "img/sep11.jpeg", "img/sep12.jpeg", "img/sep13.jpeg", "img/sep14.jpeg", "img/sep15.jpeg", "img/sep16.jpeg", "img/sep17.jpeg","img/sep18.jpeg", "img/sep19.jpeg", "img/sep20.jpeg", "img/sep21.jpeg", "img/sep22.jpeg"],
-            oct: ["img/oct1.jpeg", "img/oct2.jpeg", "img/oct3.jpeg", "img/oct4.jpeg", "img/oct5.jpeg", "img/oct6.jpeg", "img/oct7.jpeg", "img/oct8.jpeg", "img/oct9.jpeg", "img/oct10.jpeg", "img/oct11.jpeg", "img/oct12.jpeg", "img/oct13.jpeg", "img/oct14.jpeg", "img/oct15.jpeg", "img/oct16.jpeg", "img/oct17.jpeg","img/oct18.jpeg", "img/oct19.jpeg", "img/oct20.jpeg", "img/oct21.jpeg", "img/oct22.jpeg", "img/oct23.jpeg"],
-            nov: ["img/nov1.jpeg", "img/nov2.jpeg", "img/nov3.jpeg", "img/nov4.jpeg", "img/nov5.jpeg", "img/nov6.jpeg", "img/nov7.jpeg", "img/nov8.jpeg", "img/nov9.jpeg", "img/nov10.jpeg", "img/nov11.jpeg", "img/nov12.jpeg", "img/nov13.jpeg", "img/nov14.jpeg", "img/nov15.jpeg", "img/nov16.jpeg", "img/nov17.jpeg","img/nov18.jpeg", "img/nov19.jpeg", "img/nov20.jpeg", "img/nov21.jpeg", "img/nov22.jpeg", "img/nov23.jpeg", "img/nov24.jpeg", "img/nov25.jpeg", "img/nov26.jpeg", "img/nov27.jpeg", "img/nov28.jpeg", "img/nov29.jpeg", "img/nov30.jpeg"],
-            dec: ["img/dic1.jpeg", "img/dic2.jpeg", "img/dic3.jpeg", "img/dic4.jpeg", "img/dic5.jpeg", "img/dic6.jpeg", "img/dic7.jpeg", "img/dic8.jpeg", "img/dic9.jpeg", "img/dic10.jpeg", "img/dic11.jpeg", "img/dic12.jpeg", "img/dic13.jpeg", "img/dic14.jpeg", "img/dic15.jpeg", "img/dic16.jpeg", "img/dic17.jpeg","img/dic18.jpeg", "img/dic19.jpeg", "img/dic20.jpeg", "img/dic21.jpeg", "img/dic22.jpeg", "img/dic23.jpeg", "img/dic24.jpeg", "img/dic25.jpeg", "img/dic26.jpeg", "img/dic27.jpeg", "img/dic28.jpeg", "img/dic29.jpeg", "img/dic30.jpeg","img/dic31.jpeg","img/dic32.jpeg","img/dic33.jpeg"],
+            sep: ["img/sep1.jpeg", "img/sep2.jpeg", "img/sep3.jpeg", "img/sep4.jpeg", "img/sep5.jpeg", "img/sep6.jpeg", "img/sep7.jpeg", "img/sep8.jpeg", "img/sep9.jpeg", "img/sep10.jpeg", "img/sep11.jpeg", "img/sep12.jpeg", "img/sep13.jpeg", "img/sep14.jpeg", "img/sep15.jpeg", "img/sep16.jpeg", "img/sep17.jpeg", "img/sep18.jpeg", "img/sep19.jpeg", "img/sep20.jpeg", "img/sep21.jpeg", "img/sep22.jpeg"],
+            oct: ["img/oct1.jpeg", "img/oct2.jpeg", "img/oct3.jpeg", "img/oct4.jpeg", "img/oct5.jpeg", "img/oct6.jpeg", "img/oct7.jpeg", "img/oct8.jpeg", "img/oct9.jpeg", "img/oct10.jpeg", "img/oct11.jpeg", "img/oct12.jpeg", "img/oct13.jpeg", "img/oct14.jpeg", "img/oct15.jpeg", "img/oct16.jpeg", "img/oct17.jpeg", "img/oct18.jpeg", "img/oct19.jpeg", "img/oct20.jpeg", "img/oct21.jpeg", "img/oct22.jpeg", "img/oct23.jpeg", "videos/oct1.mp4", "videos/oct2.mp4"],
+            nov: ["img/nov1.jpeg", "img/nov2.jpeg", "img/nov3.jpeg", "img/nov4.jpeg", "img/nov5.jpeg", "img/nov6.jpeg", "img/nov7.jpeg", "img/nov8.jpeg", "img/nov9.jpeg", "img/nov10.jpeg", "img/nov11.jpeg", "img/nov12.jpeg", "img/nov13.jpeg", "img/nov14.jpeg", "img/nov15.jpeg", "img/nov16.jpeg", "img/nov17.jpeg", "img/nov18.jpeg", "img/nov19.jpeg", "img/nov20.jpeg", "img/nov21.jpeg", "img/nov22.jpeg", "img/nov23.jpeg", "img/nov24.jpeg", "img/nov25.jpeg", "img/nov26.jpeg", "img/nov27.jpeg", "img/nov28.jpeg", "img/nov29.jpeg", "img/nov30.jpeg","videos/nov1.mp4"],
+            dec: ["img/dic1.jpeg", "img/dic2.jpeg", "img/dic3.jpeg", "img/dic4.jpeg", "img/dic5.jpeg", "img/dic6.jpeg", "img/dic7.jpeg", "img/dic8.jpeg", "img/dic9.jpeg", "img/dic10.jpeg", "img/dic11.jpeg", "img/dic12.jpeg", "img/dic13.jpeg", "img/dic14.jpeg", "img/dic15.jpeg", "img/dic16.jpeg", "img/dic17.jpeg", "img/dic18.jpeg", "img/dic19.jpeg", "img/dic20.jpeg", "img/dic21.jpeg", "img/dic22.jpeg", "img/dic23.jpeg", "img/dic24.jpeg", "img/dic25.jpeg", "img/dic26.jpeg", "img/dic27.jpeg", "img/dic28.jpeg", "img/dic29.jpeg", "img/dic30.jpeg", "img/dic31.jpeg", "img/dic32.jpeg", "img/dic33.jpeg","videos/dec1.mp4"],
         };
 
         function loadModalContent(button) {
             const month = button.getAttribute("data-month");
-            const images = monthImages[month];
+            const items = monthImages[month];
 
             const carouselInner = document.getElementById("carouselInner");
             carouselInner.innerHTML = "";
 
-            images.forEach((image, index) => {
+            items.forEach((item, index) => {
                 const carouselItem = document.createElement("div");
                 carouselItem.className = "carousel-item" + (index === 0 ? " active" : "");
-                const img = document.createElement("img");
-                img.src = image;
-                img.className = "d-block w-100";
-                carouselItem.appendChild(img);
+
+                let mediaElement;
+                if (item.endsWith('.jpeg') || item.endsWith('.jpg') || item.endsWith('.png') || item.endsWith('.gif')) {
+                    mediaElement = document.createElement('img');
+                    mediaElement.src = item;
+                    mediaElement.className = "d-block w-100";
+                } else if (item.endsWith('.mp4')) {
+                    mediaElement = document.createElement('video');
+                    mediaElement.src = item;
+                    mediaElement.className = "d-block w-100";
+                    mediaElement.controls = true;
+                }
+
+                carouselItem.appendChild(mediaElement);
                 carouselInner.appendChild(carouselItem);
             });
 
@@ -142,14 +155,8 @@
             modal.show();
         }
     </script>
-
-</body>
-
-</html>
-
-<!--
     <script>
-        var myCarousel = document.querySelector('#carouselExample');
+        var myCarousel = document.querySelector('#monthCarousel');
         var carousel = new bootstrap.Carousel(myCarousel, {
             interval: false,
             ride: false
@@ -158,7 +165,8 @@
         myCarousel.addEventListener('slide.bs.carousel', function (e) {
             var activeItem = e.relatedTarget.querySelector('video');
             if (activeItem) {
-                activeItem.muted = true;
+                activeItem.muted = false; // Desmutear el video
+                activeItem.controls = false; // Desactivar los controles
                 activeItem.play();
             }
 
@@ -169,4 +177,7 @@
             }
         });
     </script>
-    -->
+
+</body>
+
+</html>
